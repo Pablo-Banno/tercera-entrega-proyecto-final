@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    
+    <header>
+
+<!-- ----- Título presentación ----- -->
+
+        <section class="container-fluid header-titulos">
+            <h1>Milano Centrale</h1>
+            <h2>Coffee Shop</h2>
+        </section>
+
+<!-- ----- NAV ----- -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-around">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nuestrahistoria.html">Nuestra Historia</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nuestroscafes.html">Nuestros Cafés</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nuestrosproductos.html">Nuestros Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+<!-- ----- Sección "Contacto" ----- -->
+
+        <section class="row container-fluid contacto">
+
+            <article class="horarios col-6">
+
+                <h2>Horarios de atención</h2>
+                <p>Viernes de 16:00 a 20:30</p>
+                <p>Sábados de 09:30 a 12:30 y 16:00 a 20:30</p>
+                <p>Domingos y Lunes de 16:00 a 20:30</p>
+
+            </article>
+
+            <article class="contactate col-6">
+                <form>
+
+                    <h2>Contactate con nosotros</h2>
+
+                    <div>
+                        <label for="campo-nombre"></label>
+                        <input type="text" id="campo-nombre" placeholder="Nombre/s" required>
+                    </div>
+
+                    <div>
+                        <label for="campo-apellido"></label>
+                        <input type="text" id="campo-apellido" placeholder="Apellido/s" required>
+                    </div>
+
+                    <div>
+                        <label for="campo-email"></label>
+                        <input type="text" id="campo-email" placeholder="tuemail@email.com" required>
+                    </div>
+
+                    <div>
+                        <select name="" id="select-mayor-menor">
+                            <option value="">Mayor de edad</option>
+                            <option value="">Menor de edad</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="checkbox">¿Desea recibir nuestras últimas noticias?</label>
+                        <input type="checkbox" name="" id="checkbox">
+                    </div>
+
+                    <div>
+                        <textarea name="" id="comentarios-box" cols="30" rows="10" placeholder="Comentarios"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar formulario">
+                        <input type="reset" value="Borrar formulario">
+                    </div>
+
+                </form>
+            </article>
+
+        </section>
+
+    </main>
+
+<!-- ----- Footer ----- -->
+
+    <footer class="footer">
+
+        <div class="footer-redes">
+        <p>Nuestras redes</p>
+        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-instagram"></i></a>
+        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-facebook"></i></a>
+        <a href="https://www.instagram.com/milanocentrale.oficial/" target="_blank"><i class="bi-tiktok"></i></a>
+        </div>
+
+    </footer>
+
+<script src="./js/bootstrap.js">
+</script>
+
+</body>
+
+</html>

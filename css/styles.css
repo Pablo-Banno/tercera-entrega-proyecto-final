@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* font-family: 'Mukta', sans-serif; */
+* {
+  font-family: "Mukta", sans-serif;
+}
+
+/* ================ index.html =============== */
+/* ----- Header ----- */
+.header-titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  height: 45vh;
+  background-image: url("../imagenes/fondo-header.jpg");
+  background-size: cover;
+}
+.header-titulos h1 {
+  font-size: 2.2rem;
+}
+.header-titulos h2 {
+  font-size: 1.2rem;
+}
+
+/* ----- Nav ----- */
+nav {
+  font-size: 1.2rem;
+  background-color: rgba(46, 26, 6, 0.8235294118);
+}
+
+/* ----- Quiénes somos ----- */
+.quienes-somos {
+  padding: 15px;
+  background-color: beige;
+  align-items: center;
+}
+.quienes-somos-texto h2 {
+  text-align: center;
+  height: 35px;
+}
+.quienes-somos img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .quienes-somos {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .quienes-somos-texto {
+    padding-top: 30px;
+  }
+}
+/* ----- Dónde estamos ----- */
+.donde-estamos {
+  background-color: beige;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 35px;
+}
+.donde-estamos h2 {
+  text-align: center;
+  height: 50px;
+}
+.donde-estamos img {
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .donde-estamos img {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/* ----- Galería ----- */
+.contenedor-galeria {
+  padding: 1.5vh;
+  background-color: beige;
+  height: 100%;
+  width: 100%;
+  /* Acá no me deja asignarle un height concreto, porque se me interpone con el footer */
+}
+
+.grilla {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "img1 img1 img2" "img1 img1 img3" "img4 img5 img5";
+}
+.grilla-img1 {
+  grid-area: img1;
+}
+.grilla-img2 {
+  grid-area: img2;
+}
+.grilla-img3 {
+  grid-area: img3;
+}
+.grilla-img4 {
+  grid-area: img4;
+}
+.grilla-img5 {
+  grid-area: img5;
+}
+.grilla img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.grilla img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 992px) {
+  .grilla {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "img1 img1" "img2 img3" "img4 img5";
+  }
+}
+/* ----- Footer ----- */
+.footer {
+  width: 100%;
+  background-color: rgba(46, 26, 6, 0.8235294118);
+}
+.footer-redes {
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+.footer-redes p {
+  font-weight: bold;
+}
+.footer-redes i {
+  font-size: 2rem;
+  color: white;
+}
+
+/* ================ contacto.html =============== */
+.contacto {
+  background-color: beige;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.contacto h2 {
+  height: 50px;
+}
+
+.horarios {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ================ nuestrahistoria.html =============== */
+.nuestra-historia {
+  padding: 15px;
+  background-color: beige;
+}
+.nuestra-historia h2 {
+  text-align: center;
+  height: 50px;
+}
+.nuestra-historia a img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .nuestra-historia {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .nuestra-historia-texto {
+    padding-top: 15px;
+    width: 100%;
+  }
+  .nuestra-historia img {
+    width: 100%;
+  }
+}
+/* ================ nuestroscafes.html =============== */
+.nuestros-cafes {
+  background-color: beige;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabla-cafes {
+  align-items: center;
+  justify-content: center;
+  /* No logré hacer que la tabla quedase en el medio y ocupara todo el ancho! */
+}
+
+/* ================ nuestrosproductos.html =============== */
+.nuestros-productos {
+  background-color: beige;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabla-productos {
+  align-items: center;
+  justify-content: center;
+  /* No logré hacer que la tabla quedase en el medio y ocupara todo el ancho! */
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+/* ================ nuestrahistoria.html =============== */
+
+.nuestra-historia {
+    padding: 15px;
+    background-color: beige;
+
+    h2{
+        text-align: center;
+        height: 50px;
+    }
+
+    a img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .nuestra-historia {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        &-texto {
+            padding-top: 15px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
