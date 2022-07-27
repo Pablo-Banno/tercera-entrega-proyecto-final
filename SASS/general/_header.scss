@@ -1,0 +1,29 @@
+.header-titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    color: $fuente-blanco;
+
+    padding: 20px;
+    height: 45vh;
+
+    background-image: url("../imagenes/milano-afuera-larga.jpg");
+    background-size: cover;
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-titulos {
+    background-image: url("../imagenes/milano-afuera-corta.jpg");
+    }
+}

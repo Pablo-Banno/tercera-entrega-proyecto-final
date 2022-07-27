@@ -1,7 +1,7 @@
 /* ================ contacto.html =============== */
 
 .contacto {
-    background-color: beige;
+    background-color: $color-fondo;
     padding: 15px;
 
     text-align: center;
@@ -13,7 +13,26 @@
     }
 }
 
-.horarios  {
-    font-weight: bold;
-    font-size: 1.2rem;
+    &_horarios  {
+        font-weight: bold;
+        font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    .contacto
+        &_horarios {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+        &_contactate {
+            padding-top: 15px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 }

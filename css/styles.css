@@ -1,10 +1,10 @@
 @charset "UTF-8";
-/* font-family: 'Mukta', sans-serif; */
+/* ================ SASS Base =============== */
 * {
   font-family: "Mukta", sans-serif;
 }
 
-/* ================ index.html =============== */
+/* =============== index.html =============== */
 /* ----- Header ----- */
 .header-titulos {
   display: flex;
@@ -14,7 +14,7 @@
   color: white;
   padding: 20px;
   height: 45vh;
-  background-image: url("../imagenes/fondo-header.jpg");
+  background-image: url("../imagenes/milano-afuera-larga.jpg");
   background-size: cover;
 }
 .header-titulos h1 {
@@ -24,16 +24,50 @@
   font-size: 1.2rem;
 }
 
+@media (max-width: 992px) {
+  .header-titulos {
+    background-image: url("../imagenes/milano-afuera-corta.jpg");
+  }
+}
 /* ----- Nav ----- */
 nav {
   font-size: 1.2rem;
   background-color: rgba(46, 26, 6, 0.8235294118);
 }
 
-/* ----- Quiénes somos ----- */
+@media (min-width: 992px) {
+  .boton-home {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .li-home {
+    display: none;
+  }
+} /* ----- Footer ----- */
+.footer {
+  width: 100%;
+  background-color: rgba(46, 26, 6, 0.8235294118);
+}
+.footer-redes {
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+.footer-redes p {
+  font-weight: bold;
+}
+.footer-redes i {
+  font-size: 2rem;
+  color: white;
+}
+
+/* =============== Páginas =============== */
+/* ----- Sección: Quiénes somos ----- */
 .quienes-somos {
   padding: 15px;
-  background-color: beige;
+  background-color: antiquewhite;
+  color: black;
   align-items: center;
 }
 .quienes-somos-texto h2 {
@@ -54,9 +88,10 @@ nav {
     padding-top: 30px;
   }
 }
-/* ----- Dónde estamos ----- */
+/* ----- Sección: Dónde estamos ----- */
 .donde-estamos {
-  background-color: beige;
+  background-color: antiquewhite;
+  color: black;
   align-items: center;
   padding-top: 7px;
   padding-bottom: 35px;
@@ -79,10 +114,10 @@ nav {
     padding-right: 50px;
   }
 }
-/* ----- Galería ----- */
+/* ----- Sección: Galería ----- */
 .contenedor-galeria {
   padding: 1.5vh;
-  background-color: beige;
+  background-color: antiquewhite;
   height: 100%;
   width: 100%;
   /* Acá no me deja asignarle un height concreto, porque se me interpone con el footer */
@@ -128,27 +163,9 @@ nav {
     grid-template-areas: "img1 img1" "img2 img3" "img4 img5";
   }
 }
-/* ----- Footer ----- */
-.footer {
-  width: 100%;
-  background-color: rgba(46, 26, 6, 0.8235294118);
-}
-.footer-redes {
-  text-align: center;
-  padding: 5px;
-  color: white;
-}
-.footer-redes p {
-  font-weight: bold;
-}
-.footer-redes i {
-  font-size: 2rem;
-  color: white;
-}
-
 /* ================ contacto.html =============== */
 .contacto {
-  background-color: beige;
+  background-color: antiquewhite;
   padding: 15px;
   text-align: center;
   justify-content: center;
@@ -166,7 +183,8 @@ nav {
 /* ================ nuestrahistoria.html =============== */
 .nuestra-historia {
   padding: 15px;
-  background-color: beige;
+  background-color: antiquewhite;
+  color: black;
 }
 .nuestra-historia h2 {
   text-align: center;
@@ -193,8 +211,9 @@ nav {
 }
 /* ================ nuestroscafes.html =============== */
 .nuestros-cafes {
-  background-color: beige;
+  background-color: antiquewhite;
   padding: 15px;
+  color: black;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -208,8 +227,9 @@ nav {
 
 /* ================ nuestrosproductos.html =============== */
 .nuestros-productos {
-  background-color: beige;
+  background-color: antiquewhite;
   padding: 15px;
+  color: black;
   text-align: center;
   justify-content: center;
   align-items: center;

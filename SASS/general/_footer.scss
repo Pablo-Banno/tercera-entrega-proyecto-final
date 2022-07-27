@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    background-color: $color-nav-footer;
+
+    &-redes {
+        text-align: center;
+        padding: 5px;
+        color: $fuente-blanco;
+
+        p{
+            font-weight: bold;
+        }
+
+        i {
+            font-size: 2rem;
+            color: $fuente-blanco;
+        }
+    }
+}

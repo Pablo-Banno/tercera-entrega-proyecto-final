@@ -1,17 +1,35 @@
 /* ================ nuestroscafes.html =============== */
 
 .nuestros-cafes {
-    background-color: beige;
+    background-color: $color-fondo;
     padding: 15px;
+
+    color: $fuente-negro;
 
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    a img {
+        width: 100%;
+    }
 }
-
-.tabla-cafes {
-    align-items: center;
-    justify-content: center;
-
     /* No logré hacer que la tabla quedase en el medio y ocupara todo el ancho! */
+
+@media (max-width: 992px) {
+    .nuestros-cafes {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        &_tabla {
+            padding-top: 15px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 }

@@ -1,0 +1,17 @@
+nav {
+    font-size: 1.2rem;
+    background-color: $color-nav-footer;
+
+}
+
+@media (min-width: 992px) {
+    .boton-home {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .li-home {
+        display: none;
+    }
+}
